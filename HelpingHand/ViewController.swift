@@ -39,6 +39,15 @@ class ViewController: UIViewController {
         Diary.isHidden = true
         Activities.isHidden = true
         
+        Insights.layer.cornerRadius = 5
+        Insights.layer.borderWidth = 1
+        
+        Diary.layer.cornerRadius = 5
+        Diary.layer.borderWidth = 1
+        
+        Activities.layer.cornerRadius = 5
+        Activities.layer.borderWidth = 1
+        
     }
     
     @IBAction func LoginFunction(_ sender: UIButton) {
@@ -52,7 +61,7 @@ class ViewController: UIViewController {
         Diary.isHidden = false
         Activities.isHidden = false
         
-        WelcomeLabel.text = "Hi \(Username.text!)!"
+        WelcomeLabel.text = "Hi \(Username.text!)!!"
     }
     
     
